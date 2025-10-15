@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/cavalier-king-charles-spaniel-info-hub-149340-149349/about_page_frontend"
+}
