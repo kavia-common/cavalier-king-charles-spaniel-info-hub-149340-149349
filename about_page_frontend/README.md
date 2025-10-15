@@ -1,82 +1,40 @@
-# Lightweight React Template for KAVIA
+# Cavalier King Charles Spaniel — About Page (Ocean Professional)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A modern, responsive single‑page React app that presents information about Cavalier King Charles Spaniels with sections for a hero, breed summary, characteristics, history, and a photo gallery. Styled with the Ocean Professional theme.
 
-## Features
+## Run locally
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Install dependencies: `npm install`
+- Start dev server: `npm start`
+- Open: http://localhost:3000
 
-## Getting Started
+This app uses Create React App and runs on port 3000 by default.
 
-In the project directory, you can run:
+## Structure
 
-### `npm start`
+- src/App.js — page layout and section composition
+- src/components/Hero.jsx — hero with image, gradient, and CTAs
+- src/components/Section.jsx — reusable section wrapper
+- src/components/CharacteristicCard.jsx — characteristic cards
+- src/components/Gallery.jsx — responsive gallery
+- src/index.css — Ocean Professional theme variables and styles
+- public/index.html — base HTML template
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Accessibility
 
-### `npm test`
+- Semantic landmarks (header, main, footer)
+- Keyboard-focus styles on interactive elements
+- Descriptive alt text in gallery and hero image
+- In-page navigation anchors: #summary, #characteristics, #history, #gallery
 
-Launches the test runner in interactive watch mode.
+## Theme
 
-### `npm run build`
+Ocean Professional palette:
+- Primary: #2563EB
+- Secondary/Success: #F59E0B
+- Error: #EF4444
+- Background: #f9fafb
+- Surface: #ffffff
+- Text: #111827
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Subtle gradients, rounded corners, and soft shadows are used throughout for a modern, professional feel.
