@@ -30,7 +30,7 @@ export default function Hero({ title, subtitle, ctaPrimary, ctaSecondary }) {
           <img
             src={heroImg}
             alt="Cavalier King Charles Spaniel on grass looking toward camera"
-            style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 12 }}
+            style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
           />
         </div>
       </div>

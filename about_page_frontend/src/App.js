@@ -74,7 +74,7 @@ function App() {
               <div className="section-card">
                 <ul>
                   {summaryPoints.map((p, i) => (
-                    <li key={i} style={{ marginBottom: 8, color: 'var(--muted-text)' }}>
+                    <li key={i} style={{ marginBottom: 'var(--space-2)', color: 'var(--muted-text)', lineHeight: 'var(--lh-normal)', fontSize: 'var(--fs-md)' }}>
                       {p}
                     </li>
                   ))}
@@ -109,11 +109,11 @@ function App() {
                 {historyItems.map((h) => (
                   <div className="timeline-item" role="listitem" key={h.title}>
                     <span className="timeline-dot" aria-hidden="true" />
-                    <h3 style={{ margin: '4px 0' }}>
-                      <span style={{ color: 'var(--primary)', marginRight: 8 }}>{h.year}</span>
+                    <h3 style={{ margin: 'var(--space-1) 0', lineHeight: 'var(--lh-snug)', letterSpacing: 'var(--track-tight)', fontSize: 'var(--fs-lg)' }}>
+                      <span style={{ color: 'var(--primary)', marginRight: 'var(--space-2)' }}>{h.year}</span>
                       {h.title}
                     </h3>
-                    <p style={{ color: 'var(--muted-text)', margin: 0 }}>{h.text}</p>
+                    <p style={{ color: 'var(--muted-text)', margin: 0, fontSize: 'var(--fs-md)', lineHeight: 'var(--lh-normal)' }}>{h.text}</p>
                   </div>
                 ))}
               </div>
