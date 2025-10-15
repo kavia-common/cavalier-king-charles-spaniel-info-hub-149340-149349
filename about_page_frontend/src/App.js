@@ -19,25 +19,26 @@ function App() {
   }, []);
 
   const characteristics = [
-    { icon: '💙', title: 'Affectionate', text: 'Exceptionally loving and people-oriented; thrives on companionship.' },
-    { icon: '🎾', title: 'Playful', text: 'Enjoys fetch and gentle play; great for families and apartment living.' },
-    { icon: '🧠', title: 'Intelligent', text: 'Eager to please and easy to train with positive reinforcement.' },
-    { icon: '🧒', title: 'Family-Friendly', text: 'Gentle nature makes them ideal companions for children.' },
-    { icon: '🐾', title: 'Adaptable', text: 'Comfortable with various lifestyles—from city apartments to suburban homes.' },
-    { icon: '🏥', title: 'Health-Aware', text: 'Regular vet check-ups recommended for breed-specific health monitoring.' },
+    { icon: '💙', title: 'Affectionate', text: 'Deeply people‑oriented and happiest by your side; renowned lapdogs with a loyal, gentle heart.' },
+    { icon: '🎾', title: 'Playful', text: 'Enjoys light fetch, short adventures, and interactive toys—an easygoing playmate for most households.' },
+    { icon: '🧠', title: 'Trainable', text: 'Responsive to positive reinforcement; short, fun sessions help them quickly learn manners and cues.' },
+    { icon: '🧒', title: 'Family‑Friendly', text: 'Soft temperament and patience make them loving companions for respectful children.' },
+    { icon: '🐾', title: 'Adaptable', text: 'Comfortable in city apartments or suburban homes as long as they get daily affection and moderate activity.' },
+    { icon: '🏥', title: 'Health‑Aware', text: 'Routine vet care is important; reputable breeders screen for conditions like heart and eye issues.' },
   ];
 
   const summaryPoints = [
-    'Small toy breed with a sweet, expressive face and silky coat.',
-    'Known for being affectionate, gentle, and friendly to people and pets.',
-    'Ideal companion dog that adapts to many living environments.',
+    'Small toy spaniel with a silky, feathered coat and large, expressive eyes.',
+    'Affectionate, sociable, and gentle—gets along well with people, kids, and other pets.',
+    'Moderate exercise needs and adaptable lifestyle make them wonderful companion dogs.',
+    'Grooming is manageable: regular brushing helps keep their coat tidy and comfortable.',
   ];
 
   const historyItems = [
-    { year: '1600s', title: 'Royal Companions', text: 'Esteemed in royal courts of England, especially among the nobility.' },
-    { year: '1920s', title: 'Breed Revival', text: 'Renewed interest led to the modern Cavalier standard.' },
-    { year: '1945', title: 'Recognition', text: 'Official recognition helped establish global popularity.' },
-    { year: 'Today', title: 'Beloved Companions', text: 'Known worldwide for their gentle demeanor and loving nature.' },
+    { year: '1600s', title: 'Royal Companions', text: 'Favored in the courts of England and often depicted in paintings with aristocracy.' },
+    { year: '1920s', title: 'Breed Revival', text: 'Enthusiasts revived the spaniel with longer muzzles and classic toy‑spaniel traits, shaping today’s standard.' },
+    { year: '1945', title: 'Recognition', text: 'Gained formal recognition from kennel clubs, accelerating responsible breeding and popularity.' },
+    { year: 'Today', title: 'Beloved Friends', text: 'A cherished companion worldwide, admired for their tenderness, beauty, and easy charm.' },
   ];
 
   return (
@@ -70,7 +71,7 @@ function App() {
             <Section
               id="summary"
               title="Breed Summary"
-              description="A graceful, affectionate companion breed with a joyful spirit and adaptable nature."
+              description="Graceful, affectionate, and wonderfully adaptable—an ideal companion with an easy charm."
             >
               <div className="section-card">
                 <ul>
@@ -90,7 +91,7 @@ function App() {
             <Section
               id="characteristics"
               title="Key Characteristics"
-              description="Core traits that make Cavaliers beloved companions."
+              description="The temperament and traits that make Cavaliers such beloved companions."
             >
               <div className="grid grid-3">
                 {characteristics.map((c) => (
@@ -106,7 +107,7 @@ function App() {
             <Section
               id="history"
               title="History"
-              description="A brief timeline of this cherished toy spaniel."
+              description="From royal parlors to modern homes—how the Cavalier captured hearts through the centuries."
             >
               <div className="section-card timeline" role="list">
                 {historyItems.map((h) => (
