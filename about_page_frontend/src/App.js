@@ -65,9 +65,10 @@ function App() {
           ctaSecondary={{ href: '#gallery', label: 'View Gallery' }}
         />
 
-        <section id="summary" className="section" aria-labelledby="summary-title">
+        <section className="section" aria-labelledby="summary-title">
           <div className="container">
             <Section
+              id="summary"
               title="Breed Summary"
               description="A graceful, affectionate companion breed with a joyful spirit and adaptable nature."
             >
@@ -84,9 +85,10 @@ function App() {
           </div>
         </section>
 
-        <section id="characteristics" className="section" aria-labelledby="char-title">
+        <section id="characteristics" className="section" aria-labelledby="characteristics-title">
           <div className="container">
             <Section
+              id="characteristics"
               title="Key Characteristics"
               description="Core traits that make Cavaliers beloved companions."
             >
@@ -102,6 +104,7 @@ function App() {
         <section id="history" className="section" aria-labelledby="history-title">
           <div className="container">
             <Section
+              id="history"
               title="History"
               description="A brief timeline of this cherished toy spaniel."
             >
@@ -124,6 +127,7 @@ function App() {
         <section id="gallery" className="section" aria-labelledby="gallery-title">
           <div className="container">
             <Section
+              id="gallery"
               title="Photo Gallery"
               description="A glimpse of the Cavalier’s charm and elegance."
             >
