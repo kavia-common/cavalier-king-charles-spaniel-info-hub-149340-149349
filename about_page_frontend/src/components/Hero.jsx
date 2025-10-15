@@ -18,19 +18,8 @@ export default function Hero({ title, subtitle, ctaPrimary, ctaSecondary }) {
               {ctaPrimary?.label || 'Learn More'}
             </a>
             <a
-              className="nav"
+              className="button-secondary"
               href={ctaSecondary?.href || '#'}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                padding: '8px 12px',
-                borderRadius: 10,
-                fontWeight: 700,
-                color: 'var(--primary)',
-                border: '1px solid rgba(17,24,39,0.08)',
-                background: 'var(--surface)',
-                boxShadow: 'var(--shadow)',
-              }}
               aria-label={ctaSecondary?.label || 'Secondary action'}
             >
               {ctaSecondary?.label || 'Gallery'}

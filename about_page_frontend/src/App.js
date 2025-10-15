@@ -139,11 +139,13 @@ function App() {
         </div>
       </footer>
 
-      {showTop && (
-        <a href="#hero" className="back-to-top" aria-label="Back to top">
-          ↑ Top
-        </a>
-      )}
+      <a
+        href="#hero"
+        className={`back-to-top ${showTop ? 'show' : ''}`}
+        aria-label="Back to top"
+      >
+        ↑ Top
+      </a>
     </div>
   );
 }

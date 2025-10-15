@@ -26,7 +26,7 @@ export default function Gallery() {
       {images.map((img, idx) => (
         <figure key={idx} role="listitem">
           <img src={img.src} alt={img.alt} />
-          <figcaption>{img.caption}</figcaption>
+          <figcaption aria-live="polite">{img.caption}</figcaption>
         </figure>
       ))}
     </div>
